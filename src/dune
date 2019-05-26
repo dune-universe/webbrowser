@@ -1,0 +1,14 @@
+(library
+ (name webbrowser)
+ (public_name webbrowser)
+ (libraries result bos)
+ (flags :standard -w -27-32)
+ (modules webbrowser)
+ (wrapped false))
+
+(library
+ (name webbrowser_cli)
+ (public_name webbrowser.cli)
+ (libraries webbrowser rresult cmdliner)
+ (modules webbrowser_cli)
+ (wrapped false))
